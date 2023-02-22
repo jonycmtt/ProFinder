@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>ProFinder | Programming With Sakib</title>
+  </head>
+  <body>
+    <div class="loader" style="display: none">
+      <svg>
+        <use href="/icons.svg#icon-loader"></use>
+      </svg>
+    </div>
+    <div class="container">
+      <nav>
+        <div>
+          <ion-icon name="logo-github"></ion-icon>
+          <p>ProFinder</p>
+        </div>
+      </nav>
+
+      <div class="search-users">
+        <form id="search">
+          <div class="search-users__input">
+            <input
+              type="text"
+              name="username"
+              id="findByUsername"
+              placeholder="Search github profiles here..."
+              autocomplete="off"
+            />
+          </div>
+          <div class="search-users__submit">
+            <button>
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="notFound" style="display: none">
+        <h1>User not found</h1>
+      </div>
+
+      <div class="user-details" style="display: none">
+        <div class="profile"></div>
+        <div class="repositories">
+          <div class="repositories__heading">
+            <h2>Repositories</h2>
+          </div>
+          <div class="repos"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
